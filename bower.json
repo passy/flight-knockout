@@ -3,20 +3,15 @@
   "version": "0.0.0",
   "main": "lib/knockout.js",
   "dependencies": {
-    "flight": "~1.1.0"
+    "flight": "~1.1.0",
+    "knockout-es5-passy": "~0.0.1",
+    "component-knockout-passy": "~3.0.0"
   },
   "devDependencies": {
     "jasmine-flight": "*",
     "jasmine-jquery": "*"
   },
   "ignore": [
-    ".gitignore",
-    ".gitattributes",
-    ".travis.yml",
-    "CONTRIBUTING.md",
-    "CHANGELOG.md",
-    "test",
-    "package.json",
-    "karma.conf.js"
+    "lib/!(with_model.js)"
   ]
 }

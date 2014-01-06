@@ -29,6 +29,9 @@ module.exports = function (config) {
 
       // loaded with require
       {pattern: 'bower_components/flight/**/*.js', included: false},
+      {pattern: 'bower_components/jquery/jquery.js', included: false},
+      {pattern: 'bower_components/component-knockout-passy/knockout.js', included: false},
+      {pattern: 'bower_components/knockout-es5-passy/dist/knockout-es5.js', included: false},
       {pattern: 'lib/**/*.js', included: false},
       {pattern: 'test/spec/**/*.spec.js', included: false},
 

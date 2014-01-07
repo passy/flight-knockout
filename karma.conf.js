@@ -4,79 +4,79 @@
 // https://github.com/karma-runner/karma/blob/stable/lib/config.js#L54
 
 module.exports = function (config) {
-  'use strict';
+    'use strict';
 
-  config.set({
-    // base path, that will be used to resolve files and exclude
-    basePath: '',
+    config.set({
+        // base path, that will be used to resolve files and exclude
+        basePath: '',
 
-    frameworks: [
-      'jasmine'
-    ],
+        frameworks: [
+            'jasmine'
+        ],
 
-    // list of files / patterns to load in the browser
-    files: [
-      // loaded without require
-      'bower_components/es5-shim/es5-shim.js',
-      'bower_components/es5-shim/es5-sham.js',
-      'bower_components/jquery/jquery.js',
-      'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
-      'bower_components/jasmine-flight/lib/jasmine-flight.js',
+        // list of files / patterns to load in the browser
+        files: [
+            // loaded without require
+            'bower_components/es5-shim/es5-shim.js',
+            'bower_components/es5-shim/es5-sham.js',
+            'bower_components/jquery/jquery.js',
+            'bower_components/jasmine-jquery/lib/jasmine-jquery.js',
+            'bower_components/jasmine-flight/lib/jasmine-flight.js',
 
-      // hack to load RequireJS after the shim libs
-      'node_modules/karma-requirejs/lib/require.js',
-      'node_modules/karma-requirejs/lib/adapter.js',
+            // hack to load RequireJS after the shim libs
+            'node_modules/karma-requirejs/lib/require.js',
+            'node_modules/karma-requirejs/lib/adapter.js',
 
-      // loaded with require
-      {pattern: 'bower_components/flight/**/*.js', included: false},
-      {pattern: 'bower_components/jquery/jquery.js', included: false},
-      {pattern: 'bower_components/component-knockout-passy/knockout.js', included: false},
-      {pattern: 'bower_components/knockout-es5-passy/dist/knockout-es5.js', included: false},
-      {pattern: 'lib/**/*.js', included: false},
-      {pattern: 'test/spec/**/*.spec.js', included: false},
+            // loaded with require
+            {pattern: 'bower_components/flight/**/*.js', included: false},
+            {pattern: 'bower_components/jquery/jquery.js', included: false},
+            {pattern: 'bower_components/component-knockout-passy/knockout.js', included: false},
+            {pattern: 'bower_components/knockout-es5-passy/dist/knockout-es5.js', included: false},
+            {pattern: 'lib/**/*.js', included: false},
+            {pattern: 'test/spec/**/*.spec.js', included: false},
 
-      'test/test-main.js'
-    ],
+            'test/test-main.js'
+        ],
 
-    // use dots reporter, as travis terminal does not support escaping sequences
-    // possible values: 'dots', 'progress'
-    // CLI --reporters progress
-    reporters: ['dots'],
+        // use dots reporter, as travis terminal does not support escaping sequences
+        // possible values: 'dots', 'progress'
+        // CLI --reporters progress
+        reporters: ['dots'],
 
-    // enable / disable watching file and executing tests whenever any file changes
-    // CLI --auto-watch --no-auto-watch
-    autoWatch: true,
+        // enable / disable watching file and executing tests whenever any file changes
+        // CLI --auto-watch --no-auto-watch
+        autoWatch: true,
 
-    // Start these browsers, currently available:
-    // - Chrome
-    // - ChromeCanary
-    // - Firefox
-    // - Opera
-    // - Safari (only Mac)
-    // - PhantomJS
-    // - IE (only Windows)
-    // CLI --browsers Chrome, Firefox, Safari
-    browsers: [
-      'Chrome',
-      'Firefox'
-    ],
+        // Start these browsers, currently available:
+        // - Chrome
+        // - ChromeCanary
+        // - Firefox
+        // - Opera
+        // - Safari (only Mac)
+        // - PhantomJS
+        // - IE (only Windows)
+        // CLI --browsers Chrome, Firefox, Safari
+        browsers: [
+            'Chrome',
+            'Firefox'
+        ],
 
-    // If browser does not capture in given timeout [ms], kill it
-    // CLI --capture-timeout 5000
-    captureTimeout: 20000,
+        // If browser does not capture in given timeout [ms], kill it
+        // CLI --capture-timeout 5000
+        captureTimeout: 20000,
 
-    // Auto run tests on start (when browsers are captured) and exit
-    // CLI --single-run --no-single-run
-    singleRun: false,
+        // Auto run tests on start (when browsers are captured) and exit
+        // CLI --single-run --no-single-run
+        singleRun: false,
 
-    plugins: [
-      'karma-jasmine',
-      'karma-requirejs',
-      'karma-chrome-launcher',
-      'karma-firefox-launcher',
-      'karma-ie-launcher',
-      'karma-phantomjs-launcher',
-      'karma-safari-launcher'
-    ]
-  });
+        plugins: [
+            'karma-jasmine',
+            'karma-requirejs',
+            'karma-chrome-launcher',
+            'karma-firefox-launcher',
+            'karma-ie-launcher',
+            'karma-phantomjs-launcher',
+            'karma-safari-launcher'
+        ]
+    });
 };

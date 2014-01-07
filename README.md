@@ -1,6 +1,8 @@
 # flight-knockout
 
 [![Build Status](https://secure.travis-ci.org/passy/flight-knockout.png)](http://travis-ci.org/passy/flight-knockout)
+[![Code Climate](https://codeclimate.com/github/passy/flight-knockout.png)](https://codeclimate.com/github/passy/flight-knockout)
+[![Analytics](https://ga-beacon.appspot.com/UA-587894-18/flight-knockout/readme)](https://github.com/igrigorik/ga-beacon)
 
 A [Flight](https://github.com/flightjs/flight) mixin for data-binding with
 [Knockout](http://knockoutjs.com/).
@@ -142,5 +144,3 @@ review the [guidelines for contributing](CONTRIBUTING.md).
 * [Bug reports](CONTRIBUTING.md#bugs)
 * [Feature requests](CONTRIBUTING.md#features)
 * [Pull requests](CONTRIBUTING.md#pull-requests)
-
-[![Analytics](https://ga-beacon.appspot.com/UA-587894-18/flight-knockout/readme)](https://github.com/igrigorik/ga-beacon)
